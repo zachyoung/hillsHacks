@@ -7,8 +7,13 @@
   top: 8px;
 }
 
+.logo {
+  width: 75%;
+  height: auto;
+}
+
 .home {
-   height: 100vh;
+  height: 100vh;
 }
 
 .deadCenter {
