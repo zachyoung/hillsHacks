@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+.icon {
+  position: absolute;
+  left:50%;
+  margin-left:-15px;
+  top: 8px;
+}
+
+.home {
+   height: 100vh;
+}
+
+.deadCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gray {
+  background-color: #F5F5F5;
+}
+
+.darkgray {
+  background-color: #242424;
+}
+
+.gold {
+  background-color: #ffd700;
+}
+
+.alignCenter {
+  text-align: center;
+}
+
+.text {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.whiteText {
+  color: #ffffff;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -25px;
+  visibility: hidden;
+}
+
+.navbar-toggler {
+  height: 40px;
+  border: none !important;
+  background: transparent !important;
+  outline: none !important;
+}
+
+.navbar-toggler .icon-bar {
+  width: 22px;
+  height: 2px;
+  display: block;
+  margin-top: 4px;
+  transition: all 0.2s;
+  background-color: #fff;
+}
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+.navbar-toggler .middle-bar {
+  opacity: 0;
+}
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
+@media (min-width: 768px) {
+  .icon {
+    left: 8px;
+    margin-left: 0px;
+  }
+  .navbar-nav {
+    position: relative;
+    width: 50%;
+    min-width: 600px;
+    display: inline-block;
+    float: none;
+  }
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+  .navbar-nav>li {
+    width: 25%;
+  }
+  ul li {
+    display: inline;
+    text-align: center;
+  }
+  .one:hover~hr {
+    margin-left: 0%;
+  }
+  .two:hover~hr {
+    margin-left: 25%;
+  }
+  .three:hover~hr {
+    margin-left: 50%;
+  }
+  .four:hover~hr {
+    margin-left: 75%;
+  }
+  hr {
+    position: absolute;
+    height: 5px !important;
+    top: 27px;
+    width: 25%;
+    min-width: 150px;
+    background: #ffd700;
+    border: none;
+    transition: .2s ease-in-out;
+    pointer-events: none;
+    display: none;
+  }
+  .about {
+    margin-left: 0%;
+  }
+  .register {
+    margin-left: 25%;
+  }
+  .FAQ {
+    margin-left: 50%;
+  }
+  .contactUs {
+    margin-left: 75%;
+  }
+  .adjustLeft {
+    text-align: left;
+  }
+  .text {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .anchor {
+    top: -50px;
+  }
+}
